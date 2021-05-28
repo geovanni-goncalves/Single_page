@@ -132,6 +132,7 @@
         </div>
     </section>
 
+    <section class="bk" >
     <sectio class="sessao-projetos">
 
         <div class="sessao-header">
@@ -191,6 +192,7 @@
         </div>
 
     </sectio>
+</section>
 
     <section class="sessao-contato">
         <div class="contato-wrapper">
@@ -226,8 +228,41 @@
     </section>
 
 
+    <section class="sessao-orcamento">
+        <div class="orcamento-wrapper">
+            <h1>Faça um orçamento</h1>
+            <form>
+                <label for="qtde"> Quantidade de paginas </label>
+                <input type="text" name="qtde" id="qtde">
+                <label for="js">Precisa de um script JS</label>
+                <input type="checkbox" name="js" id="js">
+                <label> Layout </label>
+                <div class="group-layout">
+                    <div>
+                        <input type="radio" name="layout" id="layout-sim">
+                        <label for="layout-sim">Precisa de um layout</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="layout" id="layout-não">
+                        <label for="layout-sim">Já tem um layout</label>
+                    </div>
+                    <label for="prazo">Prazo</label>
+                    <input type="range" name="prazo" id="prazo">
+                    <button class="btn btn-orcamento" type="submit" >Enviar</button>
 
-    </div>
+
+                </div>
+                
+
+            </form>
+
+        </div>
+
+
+    </section>
+
+
+</div>
 </body>
 
 <script src="../js/script.js"></script>
