@@ -22,11 +22,11 @@
 
 
         <header>
-            <div class="img-wrapper">
+            <div class="img-wrapper" id="home">
                 <img src="../assets/bg.jpg" alt="">
             </div>
 
-            <div class="banner">
+            <div class="banner" >
                 <h1>Web Developer & Front end Design</h1>
                 <p>Names</p>
                 <button>Saiba mais</button>
@@ -37,11 +37,11 @@
         <div class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-iten"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-iten"><a href="#" class="menu-link">Conhecimento</a></li>
-                    <li class="menu-iten"><a href="#" class="menu-link">Projetos</a></li>
-                    <li class="menu-iten"><a href="#" class="menu-link">Contatos</a></li>
-                    <li class="menu-iten"><a href="#" class="menu-link">Orçamentos</a></li>
+                    <li class="menu-iten"><a href="#home" class="menu-link">Home</a></li>
+                    <li class="menu-iten"><a href="#conhecimentos" class="menu-link">Conhecimento</a></li>
+                    <li class="menu-iten"><a href="#projetos" class="menu-link">Projetos</a></li>
+                    <li class="menu-iten"><a href="#contato" class="menu-link">Contatos</a></li>
+                    <li class="menu-iten"><a href="#orcamento" class="menu-link">Orçamentos</a></li>
                 </ul>
             </nav>
 
@@ -53,7 +53,7 @@
             </div></a>
         </div>
     </div>
-    <section class="sessao-conhecimentos">
+    <section class="sessao-conhecimentos" id="conhecimentos" >
         <div class="sessao-header">
             <h1>Conhecimentos</h1>
         </div>
@@ -133,7 +133,7 @@
     </section>
 
     <section class="bk" >
-    <sectio class="sessao-projetos">
+    <sectio class="sessao-projetos" id="projetos">
 
         <div class="sessao-header">
             <h1>Project</h1>
@@ -194,7 +194,7 @@
     </sectio>
 </section>
 
-    <section class="sessao-contato">
+    <section class="sessao-contato" id="contato">
         <div class="contato-wrapper">
 
             <div class="contato-left"></div>
@@ -228,12 +228,12 @@
     </section>
 
 
-    <section class="sessao-orcamento">
+    <section class="sessao-orcamento" id="orcamento">
         <div class="orcamento-wrapper">
             <h1>Faça um orçamento</h1>
             <form>
                 <label for="qtde"> Quantidade de paginas </label>
-                <input type="text" name="qtde" id="qtde">
+                <input type="number" min="1" name="qtde" id="qtde">
                 <label for="js">Precisa de um script JS</label>
                 <input type="checkbox" name="js" id="js">
                 <label> Layout </label>
@@ -247,7 +247,8 @@
                         <label for="layout-sim">Já tem um layout</label>
                     </div>
                     <label for="prazo">Prazo</label>
-                    <input type="range" name="prazo" id="prazo">
+                    <input type="range" name="prazo" id="prazo" min="1" max="10" >
+                    <label id="preco">R$ 0,00 </label>
                     <button class="btn btn-orcamento" type="submit" >Enviar</button>
 
 
@@ -261,6 +262,30 @@
 
     </section>
 
+    <section>
+
+      <footer>
+
+      
+            <div class="footer-content">
+             <P>
+                Copyright&copy 2021 Geovanni Gonçalves - Todos os direitos reservados
+            </P>
+          
+                <div class="social-list" >
+
+            <ul>
+                <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                <li><a href=""><i class="fab fa-git"></i></a></li>
+
+            </ul>
+            </div>
+        </div>
+        </footer>
+
+
+    </section>
 
 </div>
 </body>
